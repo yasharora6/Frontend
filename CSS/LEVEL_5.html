@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level-5</title>
+    <style>
+/* Display properties---> 1-Block 2-Inline 3-Block Inline 4-None*/
+    /* by defult it is set on block */
+
+        *{
+            margin: 0; padding: 0;
+            font-size: 50px;
+        }
+
+        
+        .box{
+            background-color: olivedrab;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            
+            /* display: inline; */
+                /* OR */
+            display: inline-block;
+        }
+    /* we can use "display:none" for remove block space of boxes */
+        /* #box2{
+            display:none;
+        } */
+
+/* Relative Units(percentage) */
+    #ParentDiv{
+        height: 200px;
+        width: 300px;
+        background-color: aqua;
+        font-size: 25px;
+/* Relative Units (EM) */
+
+    }
+    /* It mean child div will take 50% height and 50% width of Parent child */
+    #ChildDiv{
+        height: 50%;
+        background-color: blue;
+        width: 50%;
+    /* it mean font size of child div is double(2em)(1em=100%) of its parent div */
+       
+    /* em = for parent element
+        rem = for root element */
+    
+        /* font-size: 2em; */
+        /* OR         */
+        font-size: 0.5rem;
+    
+    
+    }
+    
+    
+    
+
+    </style>
+
+</head>
+<body>
+    Body Text <hr> <br>
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div> <hr> <br>
+
+<!-- Relative Units(percentage) -->
+    <div id="ParentDiv">
+        Parent
+        <div id="ChildDiv">
+        Child
+        </div>
+    </div>
+
+
+
+
+
+
+</body> 
+</html>

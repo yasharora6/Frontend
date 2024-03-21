@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level-4</title>
+<!-- Padding and Margin -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #padded{
+            height: 50px;
+            width: 50px;
+/* Padding(top right bottom left) */
+            padding: 2px;
+            margin: 5px 5px 5px 5px;
+            background-color: slateblue;
+        }
+        .pad{
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            }
+
+        #first{
+            background-color: aqua;
+            margin: 5px 5px 5px 5px;
+        }
+        #second{
+            background-color: lightpink;
+            margin: 50px 5px 5px 5px;
+        }
+/* Border Property by shorthand method */
+        #button1{
+            height: 100px; width: 100px;
+        /* shorthand method(width style color) */
+            border: 5px solid black;
+            background-color: darkgray;
+        
+        }
+        #button2{
+            height: 70px; width: 70px;
+        /* shorthand method(width style color) */
+            border: 5px dotted black;
+            background-color: firebrick;
+            margin: 20px 0px 0px 0px
+        }
+        #button3{
+            height: 60px; width: 60px;
+        /* shorthand method(width style color) */
+            border: 5px dashed black;
+            background-color: seagreen;
+            margin: 20px 0px 0px 0px;
+        /* Brder Radius by shorthand method(top right buttom left) */
+            border-radius: 10px 10px 10px 10px;
+            
+        }
+    /* we can use this box-sizing when we need height and width are including margin padding and content by defult it is set content-box */
+        #button1{
+            box-sizing: border-box;
+        }
+        #button2{
+            box-sizing: content-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="padded">Padding Checker</div> <hr>
+    <div id="first" class="pad">First</div>
+    <div id="second" class="pad">Second</div> <hr>
+
+<!-- Border Property by shorthand method -->
+
+<button id="button1">Click Me</button> <br>
+<button id="button2">Click Me</button> <br>
+<button id="button3">Click Me</button>
+
+</body>
+</html>

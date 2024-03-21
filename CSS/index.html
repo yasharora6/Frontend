@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+<!-- External Styling by link other file -->
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+                <!-- OR -->
+<!-- internal styling -->
+    <style>
+        /* h1 {
+            color: black;
+        }
+        p {
+            color: blueviolet;
+        } */
+
+    </style>
+     
+<!-- "Universal Selector" add (*) when apply same style in whole page 
+    <style>
+    * {
+        color: yellowgreen;
+    }
+    </style> -->
+        
+<!-- Id Selector id is "first" -->
+    <style>
+      #first { color: red;}
+      #second { color: green; } 
+      #second_heading {color: hotpink;}
+      .second_class {color: rosybrown;}
+    
+      /* Group Selector */
+    /* #first_heading, .second_class {color: navy;} */
+
+    </style>
+    
+
+    </head>
+
+<body>
+<!-- internal style -->
+    <h1>This is internal Styling</h1>
+    <p>This is internal Styling</p>
+<!-- inline style -->
+    <h1 style="color: red;">This is Inline Styling</h1>
+    <p style="color: green;">This is Inline Styling> </p>
+
+<!-- id(id is for single use ) & class(class is for reuse) property -->
+    <h1 id="top_heading">Id and Class</h1>
+    <p class="article">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, assumenda! </p>
+
+<!-- Id Selector, put this id(first) in head part -->
+    <div id="first">First Div</div>
+    <div id="second">Second Div</div>
+<!-- enter # then type id name and enter than it is automatic creat a new id with div -->
+    <div id="second_heading">
+        <p>this is id by using (#)</p>
+    </div>
+<!-- enter . then type class name and enter than it is automatic creat a new class with div -->
+    <div class="second_class"> 
+        <p> This is class by using (.) </p>
+            </div>
+<hr>
+</body>
+</html>
