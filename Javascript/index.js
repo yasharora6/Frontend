@@ -1,2 +1,1 @@
-const myName="yash arora"
-console.log(myName);
+console.log('I am coming from index.js')
